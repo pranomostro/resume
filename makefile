@@ -1,4 +1,4 @@
-all: ldm.pdf resume.pdf resumefr.pdf lebenslauf.pdf
+all: ldm.pdf resume.pdf resumefr.pdf lebenslauf.pdf lebenslauf_tum.pdf
 
 ldm.pdf: ldm.tex
 	pdflatex ldm.tex
@@ -11,6 +11,9 @@ resumefr.pdf: resumefr.tex
 
 lebenslauf.pdf: lebenslauf.tex
 	pdflatex lebenslauf.tex
+
+lebenslauf_tum.pdf: lebenslauf_tum.tex
+	pdflatex lebenslauf_tum.tex
 
 clean:
 	rm -f ldm.pdf ldm.aux ldm.log
